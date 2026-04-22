@@ -30,3 +30,5 @@ package-lock.json.bak
 .TemporaryItems
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
+
+.private
