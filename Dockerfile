@@ -3,7 +3,7 @@ FROM node:20-alpine AS builder
 WORKDIR /app/frontend
 
 COPY frontend/package*.json ./
-RUN cd frontend && npm ci
+RUN npm ci
 
 COPY frontend ./
 RUN npm run build
@@ -14,7 +14,7 @@ FROM node:20-alpine
 WORKDIR /app/backend
 
 COPY backend/package*.json ./
-RUN cd backend && npm ci
+RUN npm ci
 
 COPY backend ./
 
